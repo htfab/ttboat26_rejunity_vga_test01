@@ -1,27 +1,42 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/user-attachments/assets/684bffd2-92a2-46fa-bee4-1ecaa9fdd2f6">
+</p>
 
-- [Read the documentation for project](docs/info.md)
 
-## What is Tiny Tapeout?
+# The "Drop" ASIC
+
+ASIC audio visual demo.
+No CPU, no GPU, no memory. Racing the beam and straight to VGA 640x480.
+
+Entry to Tiny Tapeout Demoscene 2024 September competition: https://tinytapeout.com/competitions/demoscene/
+
+## Credits
+
+ReJ aka **Renaldas Zioma** -- code, design  
+eriQue aka **Erik Hemming** -- music, design  
+**Matthias Kampa** -- prototype code, design
+
+## Recording from VGA monitor with Audio
+
+https://github.com/user-attachments/assets/ede47d77-f7b0-44df-af79-b9e3f9fc127f
+
+## VGA signal capture with Audio
+
+https://github.com/user-attachments/assets/4055923e-9adc-49b3-bb17-637b87bc0810
+
+## Useful links
+
+* VGA PMOD [https://github.com/mole99/tiny-vga]
+* Audio PMOD (7th pin PWM) [https://github.com/MichaelBell/tt-audio-pmod?tab=readme-ov-file]
+* VGA timing [http://www.tinyvga.com/vga-timing/640x480@60Hz]
+
+# What is Tiny Tapeout?
 
 Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital and analog designs manufactured on a real chip.
 
 To learn more and get started, visit https://tinytapeout.com.
-
-## Set up your Verilog project
-
-1. Add your Verilog files to the `src` folder.
-2. Edit the [info.yaml](info.yaml) and update information about your project, paying special attention to the `source_files` and `top_module` properties. If you are upgrading an existing Tiny Tapeout project, check out our [online info.yaml migration tool](https://tinytapeout.github.io/tt-yaml-upgrade-tool/).
-3. Edit [docs/info.md](docs/info.md) and add a description of your project.
-4. Adapt the testbench to your design. See [test/README.md](test/README.md) for more information.
-
-The GitHub action will automatically build the ASIC files using [LibreLane](https://www.zerotoasiccourse.com/terminology/librelane/).
-
-## Enable GitHub actions to build the results page
-
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
 
 ## Resources
 
@@ -30,13 +45,3 @@ The GitHub action will automatically build the ASIC files using [LibreLane](http
 - [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
 - [Join the community](https://tinytapeout.com/discord)
 - [Build your design locally](https://www.tinytapeout.com/guides/local-hardening/)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
-  - Bluesky [@tinytapeout.com](https://bsky.app/profile/tinytapeout.com)
